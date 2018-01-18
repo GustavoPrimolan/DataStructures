@@ -53,6 +53,8 @@ Performance
 	- Pior Caso: O(n^2)
 	- Não recomendado para grandes conjuntos de dados
 
+<img src="BubbleSort.PNG"/>
+
 ------------------------------------------------------------------------------------------------------
 <h1>InsertionSort ou Ordenação por Inserção</h1>
 Similar a ordenação de cartas de baralho com as mãos
@@ -64,6 +66,8 @@ Perfomance
 	- Eficiente para conjuntos pequenos de dados
 	- Estável: Não altera a ordem de dados iguais
 	- Capaz de ordenar os dados a medida em que os recebe (tempo real)
+
+<img src="InsertionSort.PNG"/>
 
 ------------------------------------------------------------------------------------------------------
 <h1>SelectionSort ou Ordenação por Seleção</h1>
@@ -77,6 +81,8 @@ Performance
 	- Pior Caso: O(N^2)
 	- Ineficiente para grandes conjuntos de dados
 	- Não é estável, pode ser estável com algumas modificações: não altera a ordem de dados iguais
+
+<img src="SelectionSort.PNG"/>
 
 ------------------------------------------------------------------------------------------------------
 <h1>MergeSort ou Ordenação por Mistura</h1>
@@ -92,6 +98,8 @@ Performance
 	- Estável: Não altera a ordem de dados iguais
 	- Desvantagem: Recursivo e usa um veotr auxiliar durante a ordenação
 
+<img src="MergeSort01.PNG"/>
+<img src="MergeSort02.PNG"/>
 ------------------------------------------------------------------------------------------------------
 <h1>QuickSort ou Ordenação por Troca de Partições</h1>
 
@@ -106,10 +114,16 @@ Performance
 	- Não Estável, mas pode ser com algumas modificações: Não altera a ordem de dados iguais
 	- Desvantagens: Como escolher o pivô?
 
+<img src="QuickSort01.PNG"/>
+<img src="QuickSort02.PNG"/>
 --------------------------------------------------------------------------------------------------------
 <h1>HeapSort ou Ordenação usando heap</h1>
 Heap: Vetor que simula uma arvore binária completa (exceção do último nível)
 Todo elemento pai do vetor possui dois elementos como filhos
 pai (i) -> filhos: (2*i+1) e (2*i+2)
 
-
+<img src="HeapSort01.PNG"/>
+<img src="HeapSort02.PNG"/>
+<img src="HeapSort03.PNG"/>
+<img src="HeapSort04.PNG"/>
+<img src="HeapSort05.PNG"/>
