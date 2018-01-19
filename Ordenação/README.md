@@ -127,3 +127,8 @@ pai (i) -> filhos: (2*i+1) e (2*i+2)
 <img src="HeapSort03.PNG"/>
 <img src="HeapSort04.PNG"/>
 <img src="HeapSort05.PNG"/>
+
+----------------------------------------------------------------------------------------------------------
+<h1>Ordenação em Vetor de Struct</h1>
+
+As vezes é necessário ordenar dados além de numéricos, como por exemplo, textos.
