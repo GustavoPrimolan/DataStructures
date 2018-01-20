@@ -132,3 +132,36 @@ pai (i) -> filhos: (2*i+1) e (2*i+2)
 <h1>Ordenação em Vetor de Struct</h1>
 
 As vezes é necessário ordenar dados além de numéricos, como por exemplo, textos.
+
+---------------------------------------------------------------------------------------------------------
+<h1>Usando a função qsort()</h1>
+
+Quicksort
+	- Algoritmo rápido de ordenação
+	- Complexidade N log N
+	- Implementado na bibliboteca stdlib.h
+
+Protótipo
+	void qsort(void *base, size_t num, size_t size, int(*compar) (const void*, const void*));
+
+Parâmetros
+	- Base: Endereço do array a ser ordenado
+	- Num: Tamanho do array
+	- size: tamanho, em bytes, de cada posição do array
+	- compar: ponteiro para a função de comparação
+	
+	- size_t é apenas um inteiro sem sinal
+
+Função de comparação
+	- Função que define como dois valores (p1 e p2) do array serão ser comparados.
+	- Deve seguir o seguinte protótipo
+
+int compar (const void* p1, const void* p2);
+
+Retorno da função
+	- Valor menor do que 0: p1 vem antes de p2
+	- Valor igual a 0: p1 é igual a p2
+	- Valor maior do que 0: p1 vem depois de p2
+
+
+
