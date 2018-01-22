@@ -92,3 +92,76 @@ Arestas Múltiplas
 	- Neste caso, as arestas são ditas paralelas
 
 <img src="8.PNG"/>
+
+
+-------------------------------------------------------------------------------------------------
+<h1>Tipos de Grafos</h1>
+
+Grafo Trivial
+	- É um grafo com um único vértice e sem arestas
+
+Grafo Simples
+	- É um grafo não direcionado, sem laços e sem arestas paralelas.
+
+<img src="9.PNG"/>
+
+
+Grafo Completo <br/>
+	- É um grafo simples onde cada vértice se conecta a todos os outros vértices<br/>
+
+<img src="10.PNG"/>
+
+Grafo Regular<br/>
+	- É um grafo onde todos os vértices possuem o mesmo grau<br/>
+
+<img src="11.PNG"/>
+
+Subgrafo<br/>
+	- Um grafo Gs(Vs, As) é chamado de subgrafo de G(V, A) se:<br/>
+		- VS está contido em V<br/>
+		- As está contido em A<br/>
+
+<img src="12.PNG"/>
+
+Grafo Bipartido
+	- É um grafo cujos vértices podem ser divididos em dois conjuntos.
+	- Nesse caso, as arestas ligam os vértices que estão em conjuntos diferentes, nunca ligando vértices do mesmo conjunto.
+
+
+Grafo Conexo
+	- Existe um caminho partindo de qualquer vértice até qualquer outro vértice do grafo.
+
+Grafo Desconexo
+	- Não existe um caminho ligando dois vértices selecionados.
+
+<img src="13.PNG"/>
+
+
+Grafos Isomorfos
+	- Dois grafos, G1(V1, A1) e G2(V2, A2), são ditos isomorfos se existe uma função que faça o mapeamento de vértices e arestas de modo que os dois grafos se tornem coincidentes.
+
+<img src="14.PNG"/>
+
+Grafo Ponderado
+	- É o grafo que possui pesos associados a cada uma de suas arestas.
+
+<img src="15.PNG"/>
+
+Grafo Hamiltoniano
+	- É o grafo que possui um caminho que visita cada vértice apenas umas vez.
+		- Sua detecção é uma tarefa extremamente árdua.
+
+	- Um ciclo hamiltoniano é o clico que visita cada vértice apenas uma vez.
+
+<img src="16.PNG"/>
+
+Grafo Euleriano
+	- É o grafo que possui um ciclo que visita cada aresta apenas uma vez.
+
+<img src="17.PNG"/>
+
+
+Grafo Semi-Euleriano
+	- É o grafo que possui um caminho que visita cada aresta apenas uma vez.
+
+<img src="18.PNG"/>
