@@ -1,95 +1,95 @@
 ------------------------------------------------------------------------------------------------------
-<h1>DefiniÁ„o</h1>
+<h1>Defini√ß√£o</h1>
 
-Grafos
-	- … um modelo matem·tico que representa relaÁıes entre objetos
-	- Utilizados na definiÁ„o e/ou resoluÁ„o de problemas de diversas ·reas
+Grafos <br/>
+	- √â um modelo matem√°tico que representa rela√ß√µes entre objetos<br/>
+	- Utilizados na defini√ß√£o e/ou resolu√ß√£o de problemas de diversas √°reas<br/>
 
-Em computaÁ„o
-	- … uma forma de solucionar problemas comput·veis.
-	- Buscam o desenvolvimento de algoritmos mais eficientes.
+Em computa√ß√£o<br/>
+	- √â uma forma de solucionar problemas comput√°veis.<br/>
+	- Buscam o desenvolvimento de algoritmos mais eficientes.<br/>
 
-Exemplos
-	- Qual a melhor rota da minha casa atÈ um restaurante?
-	- Duas pessoas tem algum amigo em comum?
+Exemplos<br/>
+	- Qual a melhor rota da minha casa at√© um restaurante?<br/>
+	- Duas pessoas tem algum amigo em comum?<br/>
 
 <img src="1.PNG"/>
 
 
-Grafos
-	- … definido como um conjunto de vÈrtices e um conjunto de areastas que conectam qualquer par de vÈrtices.
-	- G = (V, A)
-		- V È o conjunto de vÈrtices (n„o vazio)
-		- A È o conjunto de arestas
+Grafos<br/>
+	- √â definido como um conjunto de v√©rtices e um conjunto de areastas que conectam qualquer par de v√©rtices.<br/>
+	- G = (V, A)<br/>
+		- V √© o conjunto de v√©rtices (n√£o vazio)<br/>
+		- A √© o conjunto de arestas<br/>
 
 <img src="2.PNG"/>
 
 
-VÈrtice
-	- … cada uma das entidades representadas em um grafo.
-	- Depende da natureza do problema. Podem ser pessoas, casa, etc.
-	- Dois vÈrtices s„o ADJACENTES se existir uma aresta ligando eles.
+V√©rtice<br/>
+	- √â cada uma das entidades representadas em um grafo.<br/>
+	- Depende da natureza do problema. Podem ser pessoas, casa, etc.<br/>
+	- Dois v√©rtices s√£o ADJACENTES se existir uma aresta ligando eles.<br/>
 
-Aresta
-	- TambÈms chamada de ARCO
-	- Est· associada a dois vÈrtices (v1, v2)
-	- Faz a ligaÁ„o entre eles, ou seja, diz qual a relaÁ„o entre eles
+Aresta<br/>
+	- Tamb√©ms chamada de ARCO<br/>
+	- Est√° associada a dois v√©rtices (v1, v2)<br/>
+	- Faz a liga√ß√£o entre eles, ou seja, diz qual a rela√ß√£o entre eles<br/>
 
 -----------------------------------------------------------------------------------------------
 <h1>Propriedades</h1>
 
-DireÁ„o das Arestas
-Grafo direcionado ou Digrafo
-	- Existe uma orientaÁ„o quanto ao sentido das arestas.
-	- Se uma aresta liga A e B, podemos ir de A para B, mas n„o o contr·rio.
+Dire√ß√£o das Arestas<br/>
+Grafo direcionado ou Digrafo<br/>
+	- Existe uma orienta√ß√£o quanto ao sentido das arestas.<br/>
+	- Se uma aresta liga A e B, podemos ir de A para B, mas n√£o o contr√°rio.<br/>
 
-Grafo n„o direcionado
-	- N„o existe nenhuma orientaÁ„o quanto ao sentido da aresta. Podemos ir de A para B ou de B para A.
+Grafo n√£o direcionado<br/>
+	- N√£o existe nenhuma orienta√ß√£o quanto ao sentido da aresta. Podemos ir de A para B ou de B para A.<br/>
 
 <img src="3.PNG"/>
 
 
-Grau de um vÈrtice
-	- … o n˙mero de arestas que chegam ou partem dele
-	- No caso dos digrafos, temos:
-		- Grau de Entrada: Arestas que chegam ao vÈrtice
-		- Grau de SaÌda: Arestas que partem do vÈrtice
+Grau de um v√©rtice<br/>
+	- √â o n√∫mero de arestas que chegam ou partem dele<br/>
+	- No caso dos digrafos, temos:<br/>
+		- Grau de Entrada: Arestas que chegam ao v√©rtice<br/>
+		- Grau de Sa√≠da: Arestas que partem do v√©rtice<br/>
 
 <img src="4.PNG"/>
 
-LaÁo
-	- Uma aresta È chamada de laÁo se seu vÈrtice de partida È o mesmo que o de chegada, ou seja, a aresta conecta o vÈrtice com ele mesmo (v,v).
+La√ßo<br/>
+	- Uma aresta √© chamada de la√ßo se seu v√©rtice de partida √© o mesmo que o de chegada, ou seja, a aresta conecta o v√©rtice com ele mesmo (v,v).<br/>
 
 
 <img src="5.PNG"/>
 
 
-Caminho
-	- … uma sequÍncia de vÈrtices de modo que existe sempre uma aresta ligando o vÈrtice anterior com o seguinte
+Caminho<br/>
+	- √â uma sequ√™ncia de v√©rtices de modo que existe sempre uma aresta ligando o v√©rtice anterior com o seguinte<br/>
 
-Caminho Simples
-	- Nenhum dos vÈrtices no caminho se repete
+Caminho Simples<br/>
+	- Nenhum dos v√©rtices no caminho se repete<br/>
 
-Comprimento do caminho
-	- … o n˙mero de arestas que o caminho usa
+Comprimento do caminho<br/>
+	- √â o n√∫mero de arestas que o caminho usa<br/>
 
 <img src="6.PNG"/>
 
 
-Ciclo
-	- … um caminho que comeÁa e termina no mesmo vÈrtice.
-	- Um laÁo È um ciclo de comprimento 1
+Ciclo<br/>
+	- √â um caminho que come√ßa e termina no mesmo v√©rtice.<br/>
+	- Um la√ßo √© um ciclo de comprimento 1<br/>
 
-Grafo acÌclico
-	- N„o contÈm ciclos simples (onde cada vÈrtice aparece apenas uma vez cada).
+Grafo ac√≠clico<br/>
+	- N√£o cont√©m ciclos simples (onde cada v√©rtice aparece apenas uma vez cada).<br/>
 
 <img src="7.PNG"/>
 
 
-Arestas M˙ltiplas
-	- TambÈm chamado Multigrafo
-	- … um grafo que permite mais de uma aresta conectando o mesmo par de vÈrtices
-	- Neste caso, as arestas s„o ditas paralelas
+Arestas M√∫ltiplas
+	- Tamb√©m chamado Multigrafo
+	- √â um grafo que permite mais de uma aresta conectando o mesmo par de v√©rtices
+	- Neste caso, as arestas s√£o ditas paralelas
 
 <img src="8.PNG"/>
 
@@ -98,70 +98,70 @@ Arestas M˙ltiplas
 <h1>Tipos de Grafos</h1>
 
 Grafo Trivial
-	- … um grafo com um ˙nico vÈrtice e sem arestas
+	- √â um grafo com um √∫nico v√©rtice e sem arestas
 
 Grafo Simples
-	- … um grafo n„o direcionado, sem laÁos e sem arestas paralelas.
+	- √â um grafo n√£o direcionado, sem la√ßos e sem arestas paralelas.
 
 <img src="9.PNG"/>
 
 
 Grafo Completo <br/>
-	- … um grafo simples onde cada vÈrtice se conecta a todos os outros vÈrtices<br/>
+	- √â um grafo simples onde cada v√©rtice se conecta a todos os outros v√©rtices<br/>
 
 <img src="10.PNG"/>
 
 Grafo Regular<br/>
-	- … um grafo onde todos os vÈrtices possuem o mesmo grau<br/>
+	- √â um grafo onde todos os v√©rtices possuem o mesmo grau<br/>
 
 <img src="11.PNG"/>
 
 Subgrafo<br/>
-	- Um grafo Gs(Vs, As) È chamado de subgrafo de G(V, A) se:<br/>
-		- VS est· contido em V<br/>
-		- As est· contido em A<br/>
+	- Um grafo Gs(Vs, As) √© chamado de subgrafo de G(V, A) se:<br/>
+		- VS est√° contido em V<br/>
+		- As est√° contido em A<br/>
 
 <img src="12.PNG"/>
 
-Grafo Bipartido
-	- … um grafo cujos vÈrtices podem ser divididos em dois conjuntos.
-	- Nesse caso, as arestas ligam os vÈrtices que est„o em conjuntos diferentes, nunca ligando vÈrtices do mesmo conjunto.
+Grafo Bipartido<br/>
+	- √â um grafo cujos v√©rtices podem ser divididos em dois conjuntos.<br/>
+	- Nesse caso, as arestas ligam os v√©rtices que est√£o em conjuntos diferentes, nunca ligando v√©rtices do mesmo conjunto.<br/>
 
 
-Grafo Conexo
-	- Existe um caminho partindo de qualquer vÈrtice atÈ qualquer outro vÈrtice do grafo.
+Grafo Conexo<br/>
+	- Existe um caminho partindo de qualquer v√©rtice at√© qualquer outro v√©rtice do grafo.<br/>
 
-Grafo Desconexo
-	- N„o existe um caminho ligando dois vÈrtices selecionados.
+Grafo Desconexo<br/>
+	- N√£o existe um caminho ligando dois v√©rtices selecionados.<br/>
 
 <img src="13.PNG"/>
 
 
-Grafos Isomorfos
-	- Dois grafos, G1(V1, A1) e G2(V2, A2), s„o ditos isomorfos se existe uma funÁ„o que faÁa o mapeamento de vÈrtices e arestas de modo que os dois grafos se tornem coincidentes.
+Grafos Isomorfos<br/>
+	- Dois grafos, G1(V1, A1) e G2(V2, A2), s√£o ditos isomorfos se existe uma fun√ß√£o que fa√ßa o mapeamento de v√©rtices e arestas de modo que os dois grafos se tornem coincidentes.<br/>
 
 <img src="14.PNG"/>
 
-Grafo Ponderado
-	- … o grafo que possui pesos associados a cada uma de suas arestas.
+Grafo Ponderado<br/>
+	- √â o grafo que possui pesos associados a cada uma de suas arestas.<br/>
 
 <img src="15.PNG"/>
 
-Grafo Hamiltoniano
-	- … o grafo que possui um caminho que visita cada vÈrtice apenas umas vez.
-		- Sua detecÁ„o È uma tarefa extremamente ·rdua.
+Grafo Hamiltoniano<br/>
+	- √â o grafo que possui um caminho que visita cada v√©rtice apenas umas vez.<br/>
+		- Sua detec√ß√£o √© uma tarefa extremamente √°rdua.<br/>
 
-	- Um ciclo hamiltoniano È o clico que visita cada vÈrtice apenas uma vez.
+	- Um ciclo hamiltoniano √© o clico que visita cada v√©rtice apenas uma vez.<br/>
 
 <img src="16.PNG"/>
 
-Grafo Euleriano
-	- … o grafo que possui um ciclo que visita cada aresta apenas uma vez.
+Grafo Euleriano<br/>
+	- √â o grafo que possui um ciclo que visita cada aresta apenas uma vez.<br/>
 
 <img src="17.PNG"/>
 
 
-Grafo Semi-Euleriano
-	- … o grafo que possui um caminho que visita cada aresta apenas uma vez.
+Grafo Semi-Euleriano<br/>
+	- √â o grafo que possui um caminho que visita cada aresta apenas uma vez.<br/>
 
 <img src="18.PNG"/>
