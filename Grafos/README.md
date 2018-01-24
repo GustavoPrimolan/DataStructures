@@ -1,4 +1,4 @@
-------------------------------------------------------------------------------------------------------
+﻿------------------------------------------------------------------------------------------------------
 <h1>Definição</h1>
 
 Grafos <br/>
@@ -165,3 +165,42 @@ Grafo Semi-Euleriano<br/>
 	- É o grafo que possui um caminho que visita cada aresta apenas uma vez.<br/>
 
 <img src="18.PNG"/>
+
+-----------------------------------------------------------------------------------
+<h1>Representação de Grafos</h1>
+
+Como representar um grafo no computador?<br />
+
+Duas abordagens são muito utilizadas<br />
+	- Matriz de Adjacência <br />
+	- Lista de Adjacência <br />
+
+Qual é a representação que deve ser utilizada? <br />
+	- Depende da aplicação! <br />
+
+<h2>Matriz de Adjacência</h2>
+	- Uma matriz NxN é utilizada para armazenar o grafo, onde N é o número de vértices.<br />
+	- Alto custo computacional, O(N^2)<br />
+	- Uma aresta é representada por uma "marca" na posição (i,j) da matriz<br />
+	- Aresta liga o vértice i ao j<br />
+
+<img src="19.PNG"/>
+<img src="20.PNG"/>
+
+<h2>Lista de Adjacência</h2>
+<img src="21.PNG"/>
+
+
+Definindo o TAD Grafo usando Lista de Adjacência<br />
+<br/>
+Grafo.h: Definir<br/>
+	- Os protótipos das funções.<br/>
+	- O ponteiro "Grafo". <br/>
+
+Grafo.c: Definir<br/>
+	- O tipo de dado grafo. Para isso vamos definir a lista de adjacências.<br/>
+	- Implementar as suas funções.<br/>
+
+
+
+
