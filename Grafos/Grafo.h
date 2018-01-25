@@ -7,3 +7,7 @@ void libera_Grafo(Grafo* gr);
 int insereAresta(Grafo* gr, int orig, int dest, int eh_diagrafo, float peso);
 
 int removeAresta(Grafo* gr, int orig, int dest, int eh_diagrafo);
+
+void buscaProfundidade_Grafo(Grafo *gr, int ini, int *visitado);
+
+void buscaLargura_Grafo(Grafo *gr, int ini, int *visitado);

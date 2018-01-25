@@ -122,11 +122,11 @@ int removeAresta(Grafo* gr, int orig, int dest, int eh_digrafo){
 	
 	//PROCURA ARESTA
 	int i = 0;
-	while(i < gre->grau[orig] && gr->arestas[orig][i] != dest)
+	while(i < gr->grau[orig] && gr->arestas[orig][i] != dest)
 		i++;
 	
 	//ELEMENTO NÃO ENCONTRADO
-	if(i == gr->grau[oring])
+	if(i == gr->grau[orig])
 		return 0;
 	
 	//COPIA O ÚLTIMO PARA A POSIÇÃO DO REMOVIDO
@@ -140,4 +140,63 @@ int removeAresta(Grafo* gr, int orig, int dest, int eh_digrafo){
 		removeAresta(gr, dest, orig, 1);
 	
 	return 1;
+}
+
+
+//FUNÇÃO AUXILIAR: REALIZA O CÁLCULO
+void buscaProfundidade(Grafo *gr, int ini, int *visitado, int cont){
+	int i;
+	
+	//MARCA O VÉRTICE COMO VISITADO. VISITA OS VIZINHOS AINDA NÃO VISITADOS
+	visitado[ini] = cont;
+	for(i=0; i < gr->grau[ini]; i++){
+		if(!visitado[gr->arestas[ini][i]])
+			buscaProfundidade(gr, gr->arestas[ini][i], visitado, cont+1);
+	}
+}
+
+//FUNÇÃO PRINCIPAL: FAZ A INTERFACE COM O USUÁRIO
+void buscaProfundidade_Grafo(Grafo *gr, int ini, int *visitado){
+	int i, cont = 1;
+	//MARCA VÉRTICES COMO NÃO VISITADOS
+	for(i=0; i < gr->nro_vertices; i++){
+		visitado[i] = 0;
+	}
+	buscaProfundidade(gr, ini, visitado, cont);
+}
+
+
+
+void buscaLargura_Grafo(Grafo *gr, int ini, int *visitado){
+	int i, vert, NV, cont = 1, *fila, IF = 0, FF= 0;
+	
+	//MARCA VÉRTICES COMO NÃO VISITADOS PARA NÃO DEIXAR PARA O USUÁRIO
+	//NUNCA DEIXAR PARA O USUÁRIO
+	for(i=0; i< gr->nro_vertices; i++)
+		visitado[i] = 0;
+	
+	//CRIA FILA.
+	//VISITA E INSERE "ini" NA FILA	
+	NV = gr->nro_vertices;
+	fila = (int*) malloc(NV *sizeof(int));
+	FF++;
+	fila[FF] = ini;
+	visitado[ini] = cont;
+	
+	while(IF != FF){
+		//PEGA PRIMEIRO DA FILA
+		IF = (IF + 1) % NV;
+		vert = fila[IF];
+		cont++;
+		//VISITA OS VIZINHOS AINDA NÃO VISITADOS E COLOCA NA FILA	
+		for(i=0; i < gr->grau[vert]; i++){
+			if(!visitado[gr->arestas[vert][i]]){
+				FF = (FF + 1) % NV;
+				fila[FF] = gr->arestas[vert][i];
+				visitado[gr->arestas[vert][i]] = cont;
+			}
+		}
+	}
+	
+	free(fila);
 }

@@ -201,6 +201,49 @@ Grafo.c: Definir<br/>
 	- O tipo de dado grafo. Para isso vamos definir a lista de adjacências.<br/>
 	- Implementar as suas funções.<br/>
 
+-----------------------------------------------------------------------------------------------------
+<h1>Busca em Grafos</h1>
+- Consiste em explorar um grafo. <br/>
+- Processo sistemático de como caminhar por seus vértices e arestas. <br/>
+- Depende do vértice inicial. <br/>
+<br/>
+<br/>
+- Vários problemas em grafos podem ser resolvidos efetuando uma busca.<br/>
+- A operação de busca pode precisar visitar todos os vértices. Para outros problemas, apenas um subconjunto dos vértices precisa ser visitado.<br/>
+
+<h2>Principais tipos de busca em grafos</h2>
+- Busca em profundidade. <br/>
+- Busca em Largura. <br/>
+- Busca pelo menor caminho. <br/>
+- Existem mais tipos de buscas. <br/>
+
+<h3>Busca em Profundidade</h3>
+- Partindo de um vértice inicial, ela explora o máximo possível cada um dos seus ramos antes de retroceder ("backtracking"). <br/>
+- Pode ser usado para: <br/>
+&nbsp- Encontrar componentes conectados e fortemente conectados. <br/>
+&nbsp- Ordenação topológica de um grafo. <br/>
+&nbsp- Resolver quebra-cabeças (Ex: Labirinto).<br/>
+
+<img src="22.PNG"/>
+
+
+
+<h3>Busca em Largura</h3>
+- Partindo de um vértice inicial, ela explora todos os vértices vizinhos. Em seguida, para cada vértice vizinho, ela repete esse processo visitando os vértices ainda inexplorados. <br/>
+- Pode ser usado para: <br/>
+&nbsp- Achar componentes conectados.<br/>
+&nbsp- Achar todos os vértices conectados a apenas um componente.<br/>
+&nbsp- Achar o menor caminho entre dois vértices.<br/>
+&nbsp- Testar bipartição em grafos.<br/>
+<img src="23.PNG"/>
+
+
+<h3>Busca pelo menor caminho</h3>
+- Partindo de um vértice inicial, calcula a menor distÂncia desse vértice a todos os demais (desde que exista um caminho entre eles).<br/>
+- Algoritmo de Dijkstra:<br/>
+&nbsp-Resolve esse problema para grafos DIRIGIDOS (digrafos) ou NÃO DIRIGIDOS (grafos) com arestas de peso NÃO NEGATIVO.
+
+
 
 
 
