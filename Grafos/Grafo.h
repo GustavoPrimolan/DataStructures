@@ -11,3 +11,8 @@ int removeAresta(Grafo* gr, int orig, int dest, int eh_diagrafo);
 void buscaProfundidade_Grafo(Grafo *gr, int ini, int *visitado);
 
 void buscaLargura_Grafo(Grafo *gr, int ini, int *visitado);
+
+//PARÂMETROS: Grafo, Vértice Inicial, DOIS VETORES INICIAIS COM O TAMANHOD O GRAFO
+//ant É O ANTERIOR DAQUELE VÉRTICE
+//dist É A DISTÂNCIA
+void menorCaminho_Grafo(Grafo *gr, int ini, int *ant, float *dist);

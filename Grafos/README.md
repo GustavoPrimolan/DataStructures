@@ -241,7 +241,9 @@ Grafo.c: Definir<br/>
 <h3>Busca pelo menor caminho</h3>
 - Partindo de um vértice inicial, calcula a menor distÂncia desse vértice a todos os demais (desde que exista um caminho entre eles).<br/>
 - Algoritmo de Dijkstra:<br/>
-&nbsp-Resolve esse problema para grafos DIRIGIDOS (digrafos) ou NÃO DIRIGIDOS (grafos) com arestas de peso NÃO NEGATIVO.
+&nbsp-Resolve esse problema para grafos DIRIGIDOS (digrafos) ou NÃO DIRIGIDOS (grafos) com arestas de peso NÃO NEGATIVO. <br/>
+
+<img src="24.PNG"/>
 
 
 

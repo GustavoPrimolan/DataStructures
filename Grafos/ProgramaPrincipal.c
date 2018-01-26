@@ -23,6 +23,7 @@ int main(int argc, char** argv)
 	libera_Grafo(gr);
 	*/
 	
+	
 	int eh_digrafo = 1;
 	Grafo* gr = cria_Grafo(5, 5, 0);
 	insereAresta(gr, 0, 1, eh_digrafo, 0);
@@ -33,19 +34,27 @@ int main(int argc, char** argv)
 	insereAresta(gr, 3, 4, eh_digrafo, 0);
 	insereAresta(gr, 4, 1, eh_digrafo, 0);
 	
-	int vis[5];
+	//int vis[5];
 	
 	//GRAFO, VÉRTICE INICIAL E OS VISITADOS
 	//buscaProfundidade_Grafo(gr, 0, vis);
 	
 	//PASSA O GRAFO, VÉRTICE INICIAL E OS VISITADOS
-	buscaLargura_Grafo(gr, 0, vis);
+	//buscaLargura_Grafo(gr, 0, vis);
+	
+	int ant[5];
+	float dist[5];
+	menorCaminho_Grafo(gr, 0, );
+	
 	
 	int i = 0;
 	for(i=0; i< 5; i++)
-		printf("%d ", vis[i]);
+		printf("%d ", ant[i]);
+		printf("%d ", dist[i]);
 	
 	libera_Grafo(gr);
+	
+	
 	
 	
 	
