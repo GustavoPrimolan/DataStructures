@@ -52,3 +52,52 @@
 
 ------------------------------------------------------------------------------------------------------
 <h1>Propriedades</h1>
+- Pai: é o antecessor imediato de um vértice.<br/>
+- Filho: É o sucessor imediato de um vértice.<br/>
+- Raiz: É o vértice que não possui pai.<br/>
+- Nós terminais ou folhas: Qualquer vértice que não possui filhos.<br/>
+- Nós não-terminais ou internos: Qualquer vértice que possui pelo menos 1 filho.<br/>
+
+<img src="04.PNG"/>
+<br/>
+
+<h2>Caminho em uma árvore</h2>
+- É uma seuqência de vértices de modo que existe sempre uma aresta ligando o vértice anterior com o seguinte.<br/>
+- Existe exatamente um caminho entre a raiz e cada um dos nós da árvore.<br/>
+
+<h2>Sub-árvores</h2>
+- Dado um determinado vértice, cada filho seu é a raiz de uma nova sub-árvore.<br/>
+- De fato, qualquer vértice é a raiz de uma sub-árvore consistindo dele e dos nós abaixo dele.<br/>
+
+<h2>Grau de um Vértice</h2>
+- É o número de sub-árvores do vértice.
+
+<h2>Altura da Árvore</h2>
+- Também chamada de profundidade.<br/>
+- É o comprimento do caminho mais longo da raiz até uma das suas folhas.<br/>
+
+<h2>Níveis</h2>
+- Numa árvore, os vértices são classificados em níveis.<br/>
+- O nível é o número de nós no caminho entre o vértice e a raiz.<br/>
+<img src="05.PNG"/>
+
+
+--------------------------------------------------------------------------------
+<h1>Árvore Binária: Definição</h1>
+- É um tipo especial de árvore.<br/>
+- Cada vértice pode possuir duas sub-árvore: sub-árvore esquerda e sub-árvore direita.<br/>
+- O grau de cada vértice (número de filhos) pode ser 0, 1 ou 2.<br/>
+<img src="06.PNG"/>
+
+<h2>Árvore Estritamente Binária</h2>
+- Cada nó (vértice) possui 0 ou 2 sub-árvores.<br/>
+- Nenhum nó tem filho único.<br/>
+- Nós internos (não folhas) sempre tem 2 filhos.<br/>
+
+<h2>Árvore Binária Completa</h2>
+- É ESTRITAMENTE BINÁRIA e todos os seus nós-folha estão no mesmo nível.<br/>
+- O número de nós de uma árvore binária completa é de 2^h-1, ounde h é a altura da árvore.<br/>
+
+<h2>Árvore Binária Quase Completa</h2>
+- A diferença de altura entre as sub-árvores de qualquer nó é o máximo 1.<br/>
+- Se a altura da árvore é D, cada nó folha está no nível D ou D-1.<br/>
