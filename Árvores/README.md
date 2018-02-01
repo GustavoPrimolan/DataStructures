@@ -101,3 +101,48 @@
 <h2>Árvore Binária Quase Completa</h2>
 - A diferença de altura entre as sub-árvores de qualquer nó é o máximo 1.<br/>
 - Se a altura da árvore é D, cada nó folha está no nível D ou D-1.<br/>
+
+-----------------------------------------------------------------------------------
+<h1>Implementando uma Árvore Binária</h1>
+Em uma Árvore Binária podemos realizar as seguintes operações:<br/>
+- Criação da Árvore.<br/>
+- Inserção de um elemento.<br/>
+- Remoção de um elemento. <br/>
+- Acesso a um elemento. <br/>
+- Destruição da Árvore.<br/>
+<br/>
+Essas operações dependem do tipo de alocação de memória usada:<br/>
+- Estática (Heap).<br/>
+- Dinâmica (Lista Encadeada).<br/>
+
+<h2>Alocação Estática (HEAP)</h2>
+- Uso de um array. <br/>
+- Usa 2 funções para retornar a posição dos filhos à esquerda e à direita de um pai. <br/>
+FILHO_ESQ(PAI) = 2 * PAI + 1;<br/>
+FILHO_DIR(PAI) = 2 * PAI + 2; <br/>
+
+<img src="07.PNG"/>
+
+<h2>Alocação Dinâmica (Lista Encadeada)</h2>
+- Cada nó da árvore é tratado como um ponteiro alocado dinamicamente a medida que os dados são inseridos. <br/>
+
+<img src="08.PNG"/>
+
+<h2>Implementando uma Árvore Binária com Alocação Dinâmica (Lista Encadeada)</h2>
+- Para guardar o primeiro nó da árvore utilizamos um ponteiro para ponteiro. <br/>
+- Um ponteiro para ponteiro pode guardar o endereço de um ponteiro. <br/>
+- Assim, fica fácil mudar quem é a raiz da árvore (se necessário).<br/>
+
+<img src="09.PNG"/>
+
+<br/>
+
+Implementando uma Árvore Binária
+ArvoreBinaria.h: Definir:<br/>
+- Os protótipos das funções. <br/>
+- O tipo de dado armazenado na árvore. <br/>
+- O ponteiro árvore.<br/>
+
+ArvoreBinaria.c: Definir:<br/>
+- O tipo de dado árvore.<br/>
+- Implementar as suas funções.<br/>
