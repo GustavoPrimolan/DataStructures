@@ -146,3 +146,18 @@ ArvoreBinaria.h: Definir:<br/>
 ArvoreBinaria.c: Definir:<br/>
 - O tipo de dado árvore.<br/>
 - Implementar as suas funções.<br/>
+
+
+--------------------------------------------------------------------------------------
+<h1>Criando e Destruindo uma Árvore Binária</h1>
+- Criação da árvore: Ato de criar a raiz da árvore. A raiz é um tipo de nó especial que aponta para o primeiro elemento da árvore.<br/>
+<br/>
+- Destruição da árvore: Envolve percorrer todos os nós da árvore de modo a liberar a memória alocada para cada um deles.<br/>
+
+-----------------------------------------------------------------------------------------
+<h1>Algumas informações básicas sobre a árvore</h1>
+- Está vazia? <br/>
+- Número de nós? <br/>
+- Altura da árvore? <br/>
+<img src="10.PNG" alt="Altura das Árvores"/>
+
