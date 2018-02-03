@@ -22,7 +22,14 @@ int main(){
 	int z = totalNO_ArvBin(raiz);
 	printf("Total de Nos na Arvore: %d\n", z);
 	
-		
+	//IMPRIMIME PRÉ ORDEM, EM ORDEM E PÓS-ORDEM
+	printf("\n\nPre-Ordem:\n\n");
+	preOrdem_ArvBin(raiz);
+	printf("\n\nEmOrdem:\n\n");
+	emOrdem_ArvBin(raiz);
+	printf("\n\nPosOrdem:\n\n");
+	posOrdem_ArvBin(raiz);
+	
 	libera_ArvBin(raiz);
 	system("pause");	
 	return 0;

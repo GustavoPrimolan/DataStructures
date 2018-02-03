@@ -161,3 +161,53 @@ ArvoreBinaria.c: Definir:<br/>
 - Altura da árvore? <br/>
 <img src="10.PNG" alt="Altura das Árvores"/>
 
+
+------------------------------------------------------------------------------------------
+<h1>Percorrendo uma Árvore Binária</h1>
+- Muitas operações em árvores binárias necessitam que se percorra todas os nós de suas sub-árvores, executando alguma ação ou tratamento em cada nó. <br/>
+<br/>
+- Cada nó é visitado uma única vez.<br/>
+- Isso gera uma sequência linear de nós, cuja ordem depende de como a árvore foi percorrida.<br/>
+<br/>
+
+- Podemos percorrer a árvore de 3 formas<br/>
+(Essas são as mais importantes, existem outras)<br/>
+<h2>Pré-Ordem</h2>
+- Visita a raiz, o filho da esquerda e o filho da direita.<br/>
+
+<h2>Em-Ordem</h2>
+- Visita o filho da esquerda, a raiz e o filho da direita.<br/>
+
+<h2>Pós-Ordem</h2>
+- Visita o filho da esquerda, o filho da direita e a raiz.<br/>
+
+<img src="11.PNG"/>
+
+------------------------------------------------------------------------------------------------------------
+<h1>Árvore Binária de Busca</h1>
+- É um tipo de árvore binária onde cada nó possui um valor (chave) associado a ele, e esse valor determina a posição do nó na árvore.<br/>
+<br/>
+- Não existem valores repetidos.<br/>
+
+<h2>Posicionamento dos valores</h2>
+- Para cada nó pai:<br/>
+- Todos os valores da sub-árvore esquerda são menores do que o nó pai.<br/>
+- Todos os valores da sub-árvore direita são maiores do que o nó pai. <br/>
+<br/><br/>
+- A inserção e remoção de nós da árvore deve ser realizadas respeitando a propriedade da árvore.
+<br/>
+Aplicações:<br/>
+- Busca Binária.<br/>
+- Análise de expressões algébricas: prefixa, infixa, e pósfixa.<br/>
+<h2>Principais Operações</h2>
+Inserção:<br/>
+- Caso médio O(log n)<br/>
+- Pior caso O(n) (Árvore não balanceada).<br/>
+<br/>
+Remoção:<br/>
+- Caso Médio O(log n)<br/>
+- Pior caso O(n) (Árvore não balanceada).<br/>
+<br/>
+Consulta:<br/>
+- Caso médio O(log n).<br/>
+- Pior caso O(n) (Árvore não balanceada).<br/>
