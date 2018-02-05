@@ -211,3 +211,21 @@ Remoção:<br/>
 Consulta:<br/>
 - Caso médio O(log n).<br/>
 - Pior caso O(n) (Árvore não balanceada).<br/>
+
+
+-----------------------------------------------------------------------------------------
+<h1>Inserção em Árvore Binária de Busca</h1>
+Para inserir um valor V na árvore binária de busca:<br/>
+- Primeiro compare com a raiz.<br/>
+- V é menor do que a raiz:<br/>
+Vá para a sub-arvore esquerda.
+<br/>
+<br/>
+- V é maior do que a raiz:<br/>
+Vá para a sub-árvore direita.<br/>
+<br/>
+- Aplique o método recursivamente (pode ser feito sem recursão).<br/>
+<br/>
+Támbem existe o caso onde a isnerção é feita em uma árvore binária que está vazia.
+
+<img src="12.PNG"/>
