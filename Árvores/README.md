@@ -229,3 +229,17 @@ Vá para a sub-árvore direita.<br/>
 Támbem existe o caso onde a isnerção é feita em uma árvore binária que está vazia.
 
 <img src="12.PNG"/>
+
+-----------------------------------------------------------------------------------------
+<h1>Remoção em Árvore Binária de Busca</h1>
+Existem 3 tipos de remoção: <br/>
+- nó folha (sem filhos)<br/>
+- nó com 1 filho <br/>
+- nó com 2 filhos <br/>
+<br/>
+<br/>
+Os 3 tipos de remoção trabalham juntos. A remoção sempre remove um elemento específico da árvore, o qual pode ser um nó folha, ter um ou dois filhos.
+<br/>
+Cuidado:<br/>
+- Não se pode remover de uma árvore vazia.<br/>
+- Removendo o último nó, a árvore fica vazia.<br/>

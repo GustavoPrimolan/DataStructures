@@ -150,7 +150,7 @@ int insere_ArvBin(ArvBin* raiz, int valor)
 			else
 				atual = atual->esq;
 		}
-		
+
 		//INSERE COMO FILHO DESSE NÓ FOLHA
 		if(valor > ant->info)
 			ant->dir = novo;
@@ -160,3 +160,69 @@ int insere_ArvBin(ArvBin* raiz, int valor)
 
 	return 1;
 }
+
+
+//FUNÇÃO RESPONSÁVEL PELA BUSCA DO NÓ A SER REMOVIDO
+int remove_ArvBin(ArvBin *raiz, int valor)
+{
+	if(raiz == NULL) return 0;
+	struct NO* ant = NULL;
+	struct NO* atual = *raiz;
+	while(atual != NULL)
+	{
+		//ACHOU O NÓ A SER REMOVIDO. TRATAR O LADO DA REMOÇÃO
+		if(valor == atual->info)
+		{
+			if(atual == *raiz)
+				*raiz = remove_atual(atual);
+			else
+			{
+				if(ant->dir == atual)
+					ant->dir = remove_atual(atual);
+				else
+					ant->esq = remove_atual(atual);
+			}
+			return 1;
+		}
+	}
+	
+	//CONTINUA ANDANDO NA ÁRVORE A PROCURA DO NÓ A SER REMOVIDO
+	ant = atual;
+	if(valor > atual->info)
+		atual = atual->dir;
+	else
+		atual = atual->esq;
+
+}
+
+//FUNÇÃO RESPNSÁVEL POR TRATAR OS 3 TIPOS DE REMOÇÃO
+struct NO* remove_atual(struct NO* atual)
+{
+	struct NO *no1, *no2;
+	//SEM FILHO DA ESQUERDA. APONTAR PARA O FILHO DA DIREITA (TRATA NÓ FOLHA E NÓ COM 1 FILHO)
+	if(atua->esq == NULL){
+		no2 = atual->dir;
+		free(atual);
+		return no2;
+	}
+	
+	no1 = atual;
+	no2 = atual->esq;
+	//PROCURA FILHO MAIS A DIREITA NA SUB-ÁRVORE DA ESQUERDA
+	while(no2->dir != NULL){
+		no1 = no2;
+		no2 = no2->dir;
+	}
+	
+	//COPIA O FILHO MAIS A DIREITA NA SUB-ÁRVORE ESQUERDA PARA O LUGAR DO NÓ REMOVIDO
+	if(no1 != atual){
+		no1->dir = no2->esq;
+		no2->esq = atual->esq;
+	}
+	
+	no2->dir = atual->dir;
+	free(atual);
+	return no2;
+	
+}
+
