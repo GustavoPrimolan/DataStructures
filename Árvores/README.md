@@ -243,3 +243,49 @@ Os 3 tipos de remoção trabalham juntos. A remoção sempre remove um elemento espe
 Cuidado:<br/>
 - Não se pode remover de uma árvore vazia.<br/>
 - Removendo o último nó, a árvore fica vazia.<br/>
+
+-------------------------------------------------------------------------------------
+<h1>Consulta em Árvore Binária de Busca</h1>
+
+Para pesquisar um valor V na árvore binária de busca:
+- Primeiro compare com a raiz<br/>
+- V é menor do que a raiz:<br/>
+Vá para a sub-árvore esquerda
+<br/><br/>
+- V é maior do que a raiz:<br/>
+Vá para a sub-árvore direita.<br/>
+<br/>
+- Aplique o método recursivamente (pode ser feito sem recursão)<br/><br/>
+
+--------------------------------------------------------------------------------------
+<h1>Árvores Balanceadas</h1>
+- É uma árvore binária onde as alturas das sub-árvores esquerda e direita de cada nó diferem de no máxima uma unidade.<br/>
+<br/>
+- Essa diferença é chamado de <strong>fator de balanceamento</strong> do nó.<br/><br/>
+
+<img src="13.PNG"/>
+
+- A eficiência da busca em uma árvore binária depende do seu balanceamento.<br/>
+<br/>
+<h2>Problema</h2>
+- Algoritmos de inserção e remoção não garantem que a árvore gerada a cada passo seja balanceada.<br/>
+- Sequência de inserções em ordem de escada.<br/>
+<br/>
+- Custo da inserção, busca e remoção em uma árvore binária:<br/>
+- Balanceada: O(logN)<br/>
+- Não balanceada: O(N)<br/>
+
+- N corresponde ao número de nós na árvore.<br/>
+
+<img src="14.PNG"/>
+
+- Solução para o problema de balanceamento?<br/>
+- Modificar as operações de inserção e remoção da árvore.<br/>
+
+<h2>Exemplos de árvore balanceadas</h2>
+- Árvore AVL.<br/>
+- Árvore 2-3-4.<br/>
+- Árvore Red-Black (também conhecida como vermelho-preto ou rubro-negra).<br/>
+
+
+

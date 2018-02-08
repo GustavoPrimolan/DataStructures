@@ -32,6 +32,8 @@ int main(){
 	
 	int removeu = remove_ArvBin(raiz, 10);
 	
+	int consulta = consulta_ArvBin(raiz, 13);
+	
 	//IMPRIMIME PRÉ ORDEM, EM ORDEM E PÓS-ORDEM
 	printf("\n\nPre-Ordem:\n\n");
 	preOrdem_ArvBin(raiz);
