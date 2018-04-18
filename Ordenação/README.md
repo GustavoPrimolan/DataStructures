@@ -194,6 +194,6 @@ MergeSort Externo: Funcionamento
 		- BUFFER DE ENTRADA vazio: Carregar mais dados.<br/>
 		- BUFFER DE SAÍDA cheio: Salvar Dados.<br/>
 
-<img src="OrdenacaoExterna.PNG"/>
+<img src="OrdenacaoExterna01.PNG"/>
 		
 
